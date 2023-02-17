@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta cahrset = "utf-8">
+        <title>Страница с бегущей строкой</title>
+    </head>
+    <body>
+        <h1 align = "center">Бегущая строка</h1>
+            <marquee>Да здравствует РКЭ!</marquee>
+            <marquee><font size="7" color="red">Да здравствует РКЭ!</font></marquee>
+        <h1 align = "center">Бегущая строка с направлением движения вправо</h1>
+            <marquee direction = "right"><font size="7" color="red">Да здравствует РКЭ!</font></marquee>
+        <h1 align = "center">Бегущая строка с остановом</h1>
+            <marquee behavior="slide"><font size="7" color="red">Да здравствует РКЭ!</font></marquee>
+        <h1 align = "center">Бегущая строка с отскоками</h1>
+            <marquee  behavior="alternate"><font size="7" color="red">Да здравствует РКЭ!</font></marquee>
+        <h1 align = "center">Бегущая строка с изображением</h1>
+            <marquee direction="right"><img src="bear.gif"></marquee>
+        <h1 align = "center">Изображение-карта</h1>  
+        <center><img src="Car1.jpg" width="530" height="360" usemap="#mymap"></center>
+        <map name="mymap">
+            <area shape="rect" coords="0,0,100,360" href="page1.html" target="_blank">
+            <area shape="rect" coords="430,0,530,360" href="page1.html">
+            <area shape="circle" coords="265,180,50" href="page1.html">
+            <area shape="poly" coords = "600,100,300,0" href = "page1.html">
+        </map> 
+        <h1 align = "center">Внутренний фрейм</h1>
+        <center><iframe src="page1.htm" width="400" height="200" frameborder = "0"></iframe></center>
+    </body>
+</html>
